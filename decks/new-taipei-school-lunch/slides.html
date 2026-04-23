@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>新北市國小免費營養午餐政策簡報</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@700;900&display=swap");
+
+      :root {
+        --bg: #f4efe5;
+        --paper: rgba(255, 251, 245, 0.84);
+        --paper-strong: rgba(255, 251, 245, 0.92);
+        --ink: #1d2b24;
+        --muted: #506158;
+        --green: #d7e4d1;
+        --green-deep: #6a8d74;
+        --gold: #e8c96c;
+        --line: rgba(185, 209, 185, 0.86);
+        --shadow: 0 24px 60px rgba(52, 57, 44, 0.16);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      }
+
+      body {
+        padding: 24px;
+      }
+
+      .deck {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+      }
+
+      .slide {
+        width: 1600px;
+        height: 900px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 34px;
+        background: linear-gradient(145deg, #f9f5eb 0%, #eef2e7 100%);
+        box-shadow: var(--shadow);
+        page-break-after: always;
+        break-after: page;
+      }
+
+      .slide:last-child {
+        page-break-after: auto;
+        break-after: auto;
+      }
+
+      .bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(90deg, rgba(246, 241, 232, 0.84) 0%, rgba(246, 241, 232, 0.58) 35%, rgba(246, 241, 232, 0.18) 62%, rgba(246, 241, 232, 0.08) 100%);
+      }
+
+      .overlay.center-soft {
+        background: linear-gradient(90deg, rgba(246, 241, 232, 0.38) 0%, rgba(246, 241, 232, 0.18) 18%, rgba(246, 241, 232, 0.12) 50%, rgba(246, 241, 232, 0.16) 82%, rgba(246, 241, 232, 0.34) 100%);
+      }
+
+      .frame {
+        position: absolute;
+        inset: 24px;
+        border-radius: 28px;
+        border: 7px solid var(--line);
+        pointer-events: none;
+      }
+
+      .content {
+        position: absolute;
+        inset: 48px 58px 70px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      .eyebrow {
+        align-self: flex-start;
+        padding: 10px 22px;
+        border-radius: 999px;
+        background: rgba(232, 201, 108, 0.92);
+        color: #5f4b12;
+        font-size: 22px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Noto Serif TC", "Microsoft JhengHei", serif;
+      }
+
+      .hero {
+        width: 690px;
+        margin-top: 24px;
+        padding: 42px 44px;
+        border-radius: 30px;
+        background: var(--paper);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 16px 36px rgba(73, 65, 48, 0.16);
+      }
+
+      .hero h1 {
+        font-size: 68px;
+        line-height: 1.16;
+      }
+
+      .hero p {
+        margin-top: 16px;
+        font-size: 24px;
+        line-height: 1.6;
+        color: #314039;
+      }
+
+      .hero .meta {
+        margin-top: 22px;
+        display: inline-flex;
+        padding: 10px 16px;
+        border-radius: 999px;
+        background: rgba(214, 228, 209, 0.9);
+        color: #335240;
+        font-weight: 700;
+        font-size: 20px;
+      }
+
+      .title {
+        max-width: 980px;
+        padding: 18px 20px 14px;
+        border-radius: 28px;
+        background: rgba(255, 251, 245, 0.72);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 14px 28px rgba(88, 83, 64, 0.08);
+      }
+
+      .title h2 {
+        font-size: 52px;
+        line-height: 1.22;
+      }
+
+      .title p {
+        margin-top: 10px;
+        max-width: 920px;
+        font-size: 22px;
+        line-height: 1.55;
+        color: var(--muted);
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1.1fr 0.92fr;
+        gap: 20px;
+      }
+
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+
+      .stack {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      .card {
+        background: var(--paper);
+        border-radius: 26px;
+        padding: 22px 24px;
+        box-shadow: 0 16px 34px rgba(68, 76, 63, 0.12);
+      }
+
+      .card h3 {
+        font-size: 28px;
+        margin-bottom: 12px;
+      }
+
+      .card p,
+      .card li {
+        font-size: 20px;
+        line-height: 1.55;
+        color: #36463f;
+      }
+
+      .card ul {
+        margin: 0;
+        padding-left: 1.2em;
+      }
+
+      .pill-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+
+      .pill {
+        padding: 13px 18px;
+        border-radius: 999px;
+        background: rgba(255, 251, 245, 0.9);
+        color: #41544b;
+        font-size: 18px;
+        font-weight: 700;
+        box-shadow: 0 10px 24px rgba(79, 83, 65, 0.08);
+      }
+
+      .highlight {
+        background: rgba(216, 235, 213, 0.88);
+        color: #274638;
+        font-weight: 800;
+      }
+
+      .three-cards {
+        margin-top: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+
+      .price {
+        font-size: 64px;
+        line-height: 1;
+        color: #597a64;
+        margin-bottom: 10px;
+      }
+
+      .small {
+        font-size: 17px !important;
+      }
+
+      .footer-note {
+        margin-top: auto;
+        width: 100%;
+        padding: 16px 22px;
+        border-radius: 24px;
+        background: rgba(224, 239, 218, 0.84);
+        color: #274537;
+        font-size: 22px;
+        font-weight: 800;
+      }
+
+      .comparison {
+        margin-top: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+
+      .comparison .card h3 {
+        margin-bottom: 10px;
+      }
+
+      .label {
+        display: inline-block;
+        margin-bottom: 12px;
+        padding: 8px 16px;
+        border-radius: 999px;
+        color: #fff;
+        font-weight: 800;
+        font-size: 18px;
+      }
+
+      .blue { background: #7da3c3; }
+      .green { background: #83a97f; }
+      .gold { background: #ddb54a; }
+
+      .ending {
+        width: 760px;
+        margin-top: 16px;
+        padding: 34px 38px;
+        border-radius: 28px;
+        background: rgba(255, 251, 245, 0.86);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 16px 32px rgba(77, 66, 47, 0.13);
+      }
+
+      .ending h2 {
+        font-size: 54px;
+        line-height: 1.16;
+      }
+
+      .ending p {
+        margin-top: 14px;
+        font-size: 24px;
+        line-height: 1.65;
+        color: #35443e;
+      }
+
+      .page-no {
+        position: absolute;
+        right: 38px;
+        bottom: 24px;
+        z-index: 3;
+        color: rgba(46, 60, 52, 0.72);
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      @media print {
+        body {
+          padding: 0;
+        }
+
+        .deck {
+          gap: 0;
+        }
+
+        .slide {
+          border-radius: 0;
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="deck">
+      <section class="slide">
+        <img class="bg" src="../nano-banana-sequence-downloads/01-Gemini_Generated_Image_seo2wcseo2wcseo2%20(1).png" alt="" />
+        <div class="overlay"></div>
+        <div class="frame"></div>
+        <div class="content">
+          <div class="eyebrow">新北市國小午餐政策</div>
+          <div class="hero">
+            <h1>免費午餐<br />政策與校內支援</h1>
+            <p>從制度善意到校園落地，整理政策背景、經費結構、教師配套與作息調整重點。</p>
+            <div class="meta">校內說明簡報</div>
+          </div>
+        </div>
+        <div class="page-no">01</div>
+      </section>
+
+      <section class="slide">
+        <img class="bg" src="../nano-banana-sequence-downloads/02-Gemini_Generated_Image_6ql3ur6ql3ur6ql3.png" alt="" />
+        <div class="overlay"></div>
+        <div class="frame"></div>
+        <div class="content">
+          <div class="eyebrow">一、政策緣起與方向</div>
+          <div class="title">
+            <h2>免費午餐已從福利選項，轉為城市教育治理的重要配套</h2>
+            <p>在少子化與教育精緻化趨勢下，午餐政策的核心不只是減輕家庭負擔，更是把學生在校照顧納入公共支持體系。</p>
+          </div>
+          <div class="grid-2" style="margin-top:auto;">
+            <div class="card stack">
+              <h3>政策推動的三個背景</h3>
+              <div class="pill-row">
+                <div class="pill">少子化下的教育精緻化</div>
+                <div class="pill">降低家庭育兒負擔</div>
+                <div class="pill">縣市政策趨勢一致化</div>
+                <div class="pill">校園基本照顧納入治理</div>
+              </div>
+              <div class="footer-note">核心不是多一項福利，而是把學生在校照顧做得更穩、更一致。</div>
+            </div>
+            <div class="stack">
+              <div class="card">
+                <h3>對象</h3>
+                <p>國小一至六年級學生，週一至週五在校午餐。</p>
+              </div>
+              <div class="card">
+                <h3>目標</h3>
+                <p>讓學生吃得安全、營養、穩定，也減輕家庭餐費壓力。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-no">02</div>
+      </section>
+
+      <section class="slide">
+        <img class="bg" src="../nano-banana-sequence-downloads/03-Gemini_Generated_Image_8ux4878ux4878ux4.png" alt="" />
+        <div class="overlay"></div>
+        <div class="frame"></div>
+        <div class="content">
+          <div class="eyebrow">二、經費補助結構</div>
+          <div class="title">
+            <h2>每人每餐補助 75 元，重點在維持供應穩定並提升菜色品質</h2>
+            <p>新增經費的設計不是重新發明午餐制度，而是在既有基礎上補強品質與家庭負擔。</p>
+          </div>
+          <div class="three-cards">
+            <div class="card">
+              <div class="price">75</div>
+              <h3>補助總額</h3>
+              <p>每位學生每餐補助 75 元，確保餐食供應與品質穩定。</p>
+            </div>
+            <div class="card">
+              <div class="price">15</div>
+              <h3>品質提升</h3>
+              <p>挹注菜色與食材品質，要求供餐水準不得低於現況。</p>
+            </div>
+            <div class="card">
+              <div class="price">60</div>
+              <h3>家長負擔</h3>
+              <p>取代原家長自付餐費，降低家庭支出壓力。</p>
+            </div>
+          </div>
+        </div>
+        <div class="page-no">03</div>
+      </section>
+
+      <section class="slide">
+        <img class="bg" src="../nano-banana-sequence-downloads/04-Gemini_Generated_Image_gltt7pgltt7pgltt.png" alt="" />
+        <div class="overlay center-soft"></div>
+        <div class="frame"></div>
+        <div class="content">
+          <div class="eyebrow">三、導師與行政配套</div>
+          <div class="title">
+            <h2>指導責任、行政協作與餐費計算，要分清楚也要講清楚</h2>
+            <p>制度設計重點不是單一補貼，而是把用餐指導、午餐業務與財務計算切開處理。</p>
+          </div>
+          <div class="grid-3" style="margin-top:auto;">
+            <div class="card">
+              <h3>導師</h3>
+              <p>一至六年級導師每人每月 1,500 元指導費，另行付費用餐，兩者不得混算。</p>
+            </div>
+            <div class="card">
+              <h3>衛生組</h3>
+              <p>午餐業務承辦人每月 1,500 元，負責午餐行政與統整作業。</p>
+            </div>
+            <div class="card">
+              <h3>其他行政</h3>
+              <p>主任、校長以外的相關人員指導費，教育局仍在研議中。</p>
+            </div>
+          </div>
+        </div>
+        <div class="page-no">04</div>
+      </section>
+
+      <section class="slide">
+        <img class="bg" src="../nano-banana-sequence-downloads/05-Gemini_Generated_Image_oosa41oosa41oosa.png" alt="" />
+        <div class="overlay"></div>
+        <div class="frame"></div>
+        <div class="content">
+          <div class="eyebrow">四、請假與餐費處理</div>
+          <div class="title">
+            <h2>不同請假情境的處理原則不同，規則要穩定、說明要一致</h2>
+            <p>病假、公假、校外教學與教師私人請假，必須分開討論，避免現場解讀不一。</p>
+          </div>
+          <div class="grid-2" style="margin-top:auto;">
+            <div class="stack">
+              <div class="card">
+                <h3>學生病假</h3>
+                <p>原則上不退費。</p>
+              </div>
+              <div class="card">
+                <h3>校外教學 / 公假出賽</h3>
+                <p>60 元餐費可轉作外出午餐費使用。</p>
+              </div>
+            </div>
+            <div class="stack">
+              <div class="card">
+                <h3>導師私人請假</h3>
+                <p>以 60 元 / 餐計算，半天且含午餐時段的計法需再釐清。</p>
+              </div>
+              <div class="footer-note">重點是建立清楚流程，避免每次都回到個案協商。</div>
+            </div>
+          </div>
+        </div>
+        <div class="page-no">05</div>
+      </section>
+
+      <section class="slide">
+        <img class="bg" src="../nano-banana-sequence-downloads/06-Gemini_Generated_Image_jiu6rnjiu6rnjiu6.png" alt="" />
+        <div class="overlay"></div>
+        <div class="frame"></div>
+        <div class="content">
+          <div class="eyebrow">五、廚餘處理與空盤計畫</div>
+          <div class="title">
+            <h2>目標是減少浪費，不是增加教師壓力，也不是要求學生勉強完食</h2>
+            <p>政策精神是珍惜食物與飲食教育，應以鼓勵與引導為主，不能把壓力全部放到第一線教師身上。</p>
+          </div>
+          <div class="grid-2" style="margin-top:auto;">
+            <div class="card">
+              <h3>行政面</h3>
+              <ul>
+                <li>廚餘改由教育局統一招標處理。</li>
+                <li>衛生組規劃空盤計畫，可參考他校做法。</li>
+                <li>可做評比，但不宜形成教師壓力。</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>現場面</h3>
+              <ul>
+                <li>以減少廚餘為方向，但不可強迫學生完食。</li>
+                <li>應尊重學生食量、接受度與身體狀況差異。</li>
+                <li>較理想做法是從菜色優化與引導慢慢改善。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="page-no">06</div>
+      </section>
+
+      <section class="slide">
+        <img class="bg" src="../nano-banana-sequence-downloads/07-Gemini_Generated_Image_7041q97041q97041.png" alt="" />
+        <div class="overlay"></div>
+        <div class="frame"></div>
+        <div class="content">
+          <div class="eyebrow">六、導師減課與回兼機制</div>
+          <div class="title">
+            <h2>制度上有減課與超鐘點配套，但校內代課人力仍是現實壓力</h2>
+            <p>因此才會出現「鼓勵回兼、但不強制」的安排，核心不是態度，而是如何維持教學運作。</p>
+          </div>
+          <div class="grid-2" style="margin-top:auto;">
+            <div class="card">
+              <h3>制度設計</h3>
+              <ul>
+                <li>每位導師每週減一節課。</li>
+                <li>減課轉為超鐘點費處理。</li>
+                <li>作為午餐指導責任的工作彈性調節。</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>校內執行原則</h3>
+              <ul>
+                <li>鼓勵將減課節次回兼，減少對外聘代課依賴。</li>
+                <li>若不回兼，教務處仍需安排代課與課務調整。</li>
+                <li>重點在找出可運作方案，而非要求一致做法。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="page-no">07</div>
+      </section>
+
+      <section class="slide">
+        <img class="bg" src="../nano-banana-sequence-downloads/08-Gemini_Generated_Image_eovt7seovt7seovt.png" alt="" />
+        <div class="overlay"></div>
+        <div class="frame"></div>
+        <div class="content">
+          <div class="eyebrow">七、作息調整方案</div>
+          <div class="title">
+            <h2>三組方案的差異，核心在大下課長度、午餐起始時間與午休彈性</h2>
+            <p>這一頁最適合用比較式版面，先攤開差異，再讓教師週會討論。</p>
+          </div>
+          <div class="comparison">
+            <div class="card">
+              <div class="label blue">方案 A</div>
+              <h3>先吃飯，再拉長午休</h3>
+              <ul class="small">
+                <li>大下課縮為 10 分鐘。</li>
+                <li>11:50 全校開始用餐。</li>
+                <li>12:00 到 13:10 靜態午休。</li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="label green">方案 B</div>
+              <h3>維持大下課，午餐彈性提前</h3>
+              <ul class="small">
+                <li>大下課維持原狀。</li>
+                <li>12:00 到 12:30 用餐。</li>
+                <li>低年級可依需求提前 10 分鐘。</li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="label gold">方案 C / D</div>
+              <h3>拉長用餐時間到 40 分鐘</h3>
+              <ul class="small">
+                <li>回應部分老師認為 30 分鐘不足。</li>
+                <li>較能降低餐壓，但會牽動整體作息。</li>
+                <li>需評估午休、課程與秩序影響。</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-note">建議學務處先說明優缺點，再引導教師表達現場需求，最後共同確認定案。</div>
+        </div>
+        <div class="page-no">08</div>
+      </section>
+
+      <section class="slide">
+        <img class="bg" src="../nano-banana-sequence-downloads/09-Gemini_Generated_Image_97ghhz97ghhz97gh.png" alt="" />
+        <div class="overlay"></div>
+        <div class="frame"></div>
+        <div class="content">
+          <div class="eyebrow">八、結語</div>
+          <div class="ending">
+            <h2>讓政策善意真正落地，需要制度設計，也需要現場共同協作</h2>
+            <p>免費午餐不只是福利，而是對學生照顧、家庭支持與教育品質的整體承諾。接下來的關鍵，在於行政、教師與家長能否用一致步調，把政策轉成穩定可行的校園日常。</p>
+          </div>
+        </div>
+        <div class="page-no">09</div>
+      </section>
+    </div>
+  </body>
+</html>

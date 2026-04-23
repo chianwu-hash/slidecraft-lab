@@ -1,0 +1,19 @@
+node_modules/
+dist/
+tmp/
+output/
+exports/tmp/
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Generated media exports
+exports/**/*.png
+exports/**/*.jpg
+exports/**/*.jpeg
+exports/**/*.webp
+
+# Keep PDF exports unless explicitly removed
+

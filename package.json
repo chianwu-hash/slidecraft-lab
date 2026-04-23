@@ -1,0 +1,10 @@
+{
+  "name": "slidecraft-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "An experimental workspace for crafting AI-generated presentations with strong visual identity, repeatable workflows, and brand-aware design.",
+  "type": "commonjs",
+  "scripts": {
+    "check": "node -e \"console.log('slidecraft-lab scaffold ready')\""
+  }
+}
