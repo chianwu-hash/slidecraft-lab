@@ -65,9 +65,18 @@ Use for:
 - brand integration trials
 - layout studies
 
+Experiments are non-canonical until a result is promoted into `prompts/`, `decks/`, or `exports/`.
+
+### `templates/`
+
+Use for:
+
+- reusable deck package starter documents
+- brief, prompt-pack, deck README, and production-note templates
+- lightweight scaffolding that supports presentation work without adding automation internals
+
 ## Rule of Thumb
 
 If it is reusable browser automation infrastructure, it belongs in `browser-automation-workflow`.
 
 If it is specific to a presentation outcome, it belongs in `slidecraft-lab`.
-

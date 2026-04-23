@@ -16,6 +16,8 @@ It focuses on turning real source material into presentation outputs such as:
 
 This repo is intentionally separate from the browser automation foundation.
 
+In this repo, a deck means a complete presentation project package, not only the final exported file.
+
 ## Relationship to `browser-automation-workflow`
 
 Use `browser-automation-workflow` for:
@@ -54,6 +56,8 @@ In short:
   final deck outputs and reviewed generated images
 - `experiments/`
   side-by-side tests, model comparisons, prompt studies
+- `templates/`
+  reusable deck package starters and document templates
 - `docs/`
   repo conventions and working agreements
 
@@ -65,6 +69,20 @@ In short:
 4. Use `browser-automation-workflow` to run the Gemini image sequence.
 5. Save reviewed outputs under `exports/`.
 6. Compose the final deck under `decks/<deck-name>/`.
+
+See also:
+
+- [docs/project-structure.md](</c:/Users/user/projects/slidecraft-lab/docs/project-structure.md:1>)
+- [docs/deck-workflow.md](</c:/Users/user/projects/slidecraft-lab/docs/deck-workflow.md:1>)
+- [docs/deck-conventions.md](</c:/Users/user/projects/slidecraft-lab/docs/deck-conventions.md:1>)
+- [docs/brand-integration.md](</c:/Users/user/projects/slidecraft-lab/docs/brand-integration.md:1>)
+- [docs/export-review-checklist.md](</c:/Users/user/projects/slidecraft-lab/docs/export-review-checklist.md:1>)
+- [docs/naming-conventions.md](</c:/Users/user/projects/slidecraft-lab/docs/naming-conventions.md:1>)
+- [docs/encoding-guardrails.md](</c:/Users/user/projects/slidecraft-lab/docs/encoding-guardrails.md:1>)
+- [docs/sample-deck-walkthrough.md](</c:/Users/user/projects/slidecraft-lab/docs/sample-deck-walkthrough.md:1>)
+- [docs/prompt-pack-conventions.md](</c:/Users/user/projects/slidecraft-lab/docs/prompt-pack-conventions.md:1>)
+- [docs/experiment-conventions.md](</c:/Users/user/projects/slidecraft-lab/docs/experiment-conventions.md:1>)
+- [docs/deck-publishing-notes.md](</c:/Users/user/projects/slidecraft-lab/docs/deck-publishing-notes.md:1>)
 
 ## First Use
 
@@ -84,13 +102,17 @@ Then keep related files together:
 
 ## Current Status
 
-This repo starts as a clean presentation workspace scaffold.
+This repo is now organized as a presentation product workspace with one complete reference deck.
 
-It does not yet include:
+It currently includes:
+
+- one complete reference deck: `new-taipei-school-lunch`
+- brief, prompt pack, generated image set, composed HTML deck, export script, and final PDF
+- starter documents for new deck packages under `templates/deck-template/`
+
+It does not yet aim to include:
 
 - a browser automation dependency bridge
-- a default deck template
-- a publishing workflow
+- an automated publishing pipeline
 
 Those can be added after the first few real deck projects settle into a stable pattern.
-

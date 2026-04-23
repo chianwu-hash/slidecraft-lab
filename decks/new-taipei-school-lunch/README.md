@@ -12,6 +12,10 @@ It demonstrates a complete presentation workflow:
 - composed HTML slide deck
 - exported PDF
 
+## Status
+
+Status: final
+
 ## Contents
 
 - `slides.html`
@@ -23,7 +27,7 @@ It demonstrates a complete presentation workflow:
 - `final/`
   final exported PDF
 - `notes/`
-  reserved for iteration notes and review comments
+  production notes, review comments, and version context
 
 ## Related Files
 
@@ -38,3 +42,8 @@ It demonstrates a complete presentation workflow:
 
 This deck was migrated from the earlier working area in `it-class-tcwu` so that `slidecraft-lab` starts with one realistic end-to-end example instead of an empty scaffold.
 
+Production notes:
+
+- [production-notes.md](</c:/Users/user/projects/slidecraft-lab/decks/new-taipei-school-lunch/notes/production-notes.md:1>)
+
+For a repo-level walkthrough of this sample, see [docs/sample-deck-walkthrough.md](</c:/Users/user/projects/slidecraft-lab/docs/sample-deck-walkthrough.md:1>).
