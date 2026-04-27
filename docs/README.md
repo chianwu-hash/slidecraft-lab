@@ -4,6 +4,8 @@ Use this folder for repo-level working agreements, deck conventions, and reusabl
 
 Current docs:
 
+- [product-positioning.md](</c:/Users/user/projects/slidecraft-lab/docs/product-positioning.md:1>)
+  product purpose, differentiation, and presentation production modes
 - [project-structure.md](</c:/Users/user/projects/slidecraft-lab/docs/project-structure.md:1>)
   top-level folder responsibilities and repo boundary
 - [deck-workflow.md](</c:/Users/user/projects/slidecraft-lab/docs/deck-workflow.md:1>)

@@ -3,6 +3,9 @@ dist/
 tmp/
 output/
 exports/tmp/
+scratch/
+.browser-profiles/
+.browser-sessions/
 *.log
 *.tmp
 *.bak
@@ -14,6 +17,9 @@ exports/**/*.png
 exports/**/*.jpg
 exports/**/*.jpeg
 exports/**/*.webp
+exports/**/*.json
+decks/*/rendered-pages/
+decks/*/*.pdf
 
 # Keep PDF exports unless explicitly removed
-
+!decks/*/final/*.pdf

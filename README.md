@@ -1,10 +1,12 @@
 # slidecraft-lab
 
-An experimental workspace for crafting AI-generated presentations with strong visual identity, repeatable workflows, and brand-aware design.
+An experimental workspace for crafting AI-assisted presentations with repeatable workflows, high adjustment freedom, reviewable production layers, and brand-aware design.
 
 ## Purpose
 
-`slidecraft-lab` is the application-layer repo for presentation work.
+`slidecraft-lab` is the application-layer repo for presentation work. It is not a one-click AI deck generator; it is a controllable presentation production lab.
+
+The project exists to produce decks that better fit real user needs by keeping source material, slide copy, image prompts, generated images, layout source, exports, and production notes separated enough to review and rerun.
 
 It focuses on turning real source material into presentation outputs such as:
 
@@ -17,6 +19,29 @@ It focuses on turning real source material into presentation outputs such as:
 This repo is intentionally separate from the browser automation foundation.
 
 In this repo, a deck means a complete presentation project package, not only the final exported file.
+
+For the fuller product position, see [docs/product-positioning.md](</c:/Users/user/projects/slidecraft-lab/docs/product-positioning.md:1>).
+
+## Product Position
+
+`slidecraft-lab` favors accuracy, controllability, revision, and process learning over one-click speed.
+
+Market AI presentation products are useful for fast generation. This repo is useful when a deck needs:
+
+- repeatable workflows
+- high freedom to adjust text, image, and layout separately
+- traceable prompts and production decisions
+- human-reviewable outputs
+- formal or domain-specific accuracy
+- reusable lessons across future decks
+
+Each deck should declare its production mode before image prompts are written:
+
+- full-page generation: the image model creates the whole slide page, including text
+- composed layout: the assistant controls final text and layout, while the image model creates supporting visuals
+- hybrid: full-page generation for covers or dividers, composed layout for information-heavy pages
+
+Comparative output is an optional experiment strategy, not a fourth production mode.
 
 ## Relationship to `browser-automation-workflow`
 

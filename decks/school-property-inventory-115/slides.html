@@ -1,0 +1,1000 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>115年財產盤點準則簡報</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@700;900&display=swap");
+
+      :root {
+        --bg: #edf4ef;
+        --paper: rgba(255, 253, 248, 0.92);
+        --paper-strong: rgba(255, 253, 248, 0.97);
+        --ink: #1d2d28;
+        --muted: #5a6e66;
+        --green-1: #dcecdf;
+        --green-2: #bfd8c5;
+        --green-3: #638e77;
+        --blue-1: #dceaf2;
+        --blue-2: #8eafc2;
+        --gold-1: #f1df9f;
+        --gold-2: #c8a03d;
+        --rose-1: #f4ddd8;
+        --line: rgba(110, 149, 124, 0.2);
+        --shadow: 0 24px 54px rgba(69, 87, 76, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      }
+
+      body {
+        padding: 28px;
+      }
+
+      .deck {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .slide {
+        position: relative;
+        width: 1600px;
+        height: 900px;
+        overflow: hidden;
+        border-radius: 34px;
+        background:
+          radial-gradient(circle at top right, rgba(255, 255, 255, 0.78), transparent 34%),
+          linear-gradient(150deg, #f8fbf8 0%, #edf5ef 58%, #e6f0ea 100%);
+        box-shadow: var(--shadow);
+        page-break-after: always;
+        break-after: page;
+      }
+
+      .slide:last-child {
+        page-break-after: auto;
+        break-after: auto;
+      }
+
+      .shape,
+      .shape::before,
+      .shape::after {
+        position: absolute;
+        content: "";
+        pointer-events: none;
+      }
+
+      .shape.a {
+        top: -78px;
+        right: -36px;
+        width: 380px;
+        height: 240px;
+        background: rgba(191, 216, 197, 0.46);
+        border-radius: 39% 61% 67% 33% / 42% 46% 54% 58%;
+      }
+
+      .shape.b {
+        bottom: -70px;
+        left: -42px;
+        width: 360px;
+        height: 220px;
+        background: rgba(220, 234, 242, 0.42);
+        border-radius: 56% 44% 31% 69% / 44% 36% 64% 56%;
+      }
+
+      .shape.c {
+        top: 116px;
+        right: 188px;
+        width: 118px;
+        height: 118px;
+        background: rgba(241, 223, 159, 0.34);
+        border-radius: 50%;
+      }
+
+      .frame {
+        position: absolute;
+        inset: 22px;
+        border-radius: 30px;
+        border: 2px solid rgba(117, 160, 133, 0.24);
+      }
+
+      .content {
+        position: absolute;
+        inset: 46px 56px 52px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      .eyebrow {
+        align-self: flex-start;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 18px;
+        border-radius: 999px;
+        background: rgba(241, 223, 159, 0.76);
+        color: #6b5418;
+        font-size: 20px;
+        font-weight: 900;
+        letter-spacing: 0.04em;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #fffaf0;
+        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Noto Serif TC", "Microsoft JhengHei", serif;
+      }
+
+      .hero-shell,
+      .split-shell,
+      .closing-shell {
+        display: grid;
+        gap: 18px;
+      }
+
+      .hero-shell {
+        grid-template-columns: 0.92fr 0.88fr;
+        margin-top: 16px;
+      }
+
+      .split-shell {
+        grid-template-columns: 0.86fr 1.14fr;
+        margin-top: auto;
+      }
+
+      .closing-shell {
+        grid-template-columns: 1fr 0.88fr;
+        margin-top: auto;
+      }
+
+      .hero-card,
+      .title-box,
+      .card,
+      .media-stage,
+      .note-band,
+      .closing-line {
+        border-radius: 28px;
+        background: var(--paper);
+        box-shadow: 0 14px 34px rgba(89, 106, 92, 0.1);
+      }
+
+      .hero-card {
+        padding: 40px 42px;
+      }
+
+      .hero-card h1 {
+        font-size: 68px;
+        line-height: 1.15;
+      }
+
+      .hero-card p {
+        margin-top: 18px;
+        font-size: 24px;
+        line-height: 1.65;
+        color: #364841;
+      }
+
+      .hero-meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 26px;
+      }
+
+      .hero-meta {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 16px;
+        border-radius: 999px;
+        background: rgba(191, 216, 197, 0.72);
+        color: #31513f;
+        font-size: 19px;
+        font-weight: 800;
+      }
+
+      .hero-meta::before {
+        content: "";
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: #7aa08b;
+      }
+
+      .title-box {
+        padding: 20px 24px 18px;
+        background: var(--paper-strong);
+      }
+
+      .title-box h2 {
+        font-size: 50px;
+        line-height: 1.18;
+      }
+
+      .title-box p {
+        margin-top: 12px;
+        font-size: 23px;
+        line-height: 1.6;
+        color: var(--muted);
+      }
+
+      .card {
+        padding: 22px 24px;
+      }
+
+      .card h3 {
+        margin-bottom: 12px;
+        font-size: 28px;
+        line-height: 1.3;
+      }
+
+      .card p,
+      .card li {
+        font-size: 20px;
+        line-height: 1.58;
+        color: #39524a;
+      }
+
+      .card ul,
+      .card ol {
+        margin: 0;
+        padding-left: 1.2em;
+      }
+
+      .card ol li + li,
+      .card ul li + li {
+        margin-top: 6px;
+      }
+
+      .soft {
+        background: rgba(255, 253, 248, 0.8);
+      }
+
+      .green {
+        background: rgba(220, 236, 223, 0.9);
+      }
+
+      .blue {
+        background: rgba(220, 234, 242, 0.9);
+      }
+
+      .gold {
+        background: rgba(248, 239, 206, 0.94);
+      }
+
+      .rose {
+        background: rgba(244, 221, 216, 0.82);
+      }
+
+      .icon-head {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+
+      .icon-square {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+        background: rgba(99, 142, 119, 0.16);
+        flex: 0 0 auto;
+      }
+
+      .grid-2,
+      .grid-3,
+      .grid-4,
+      .step-grid,
+      .timeline {
+        display: grid;
+        gap: 16px;
+      }
+
+      .grid-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .grid-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .grid-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .step-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        margin-top: auto;
+      }
+
+      .timeline {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        margin-top: auto;
+      }
+
+      .stack {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      .pill-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .pill {
+        padding: 14px 16px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.72);
+        border: 1px solid rgba(118, 152, 132, 0.18);
+        font-size: 18px;
+        line-height: 1.45;
+        font-weight: 700;
+        color: #345046;
+      }
+
+      .media-stage {
+        position: relative;
+        overflow: hidden;
+        min-height: 100%;
+        padding: 18px;
+        background:
+          radial-gradient(circle at top left, rgba(255, 255, 255, 0.76), transparent 26%),
+          linear-gradient(160deg, rgba(220, 234, 242, 0.86), rgba(191, 216, 197, 0.7));
+      }
+
+      .media-stage::after {
+        content: "";
+        position: absolute;
+        inset: 18px;
+        border-radius: 24px;
+        border: 1px dashed rgba(91, 125, 107, 0.26);
+      }
+
+      .media-label {
+        position: absolute;
+        top: 20px;
+        left: 22px;
+        z-index: 1;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.82);
+        color: #476155;
+        font-size: 16px;
+        font-weight: 800;
+      }
+
+      .media-label::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--green-3);
+      }
+
+      .image-slot {
+        position: absolute;
+        inset: 58px 18px 18px;
+        border-radius: 24px;
+        overflow: hidden;
+        background:
+          linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(244, 248, 245, 0.78));
+      }
+
+      .image-slot img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .slot-fallback {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 26px;
+        text-align: center;
+        color: #537066;
+      }
+
+      .slot-fallback::before {
+        content: attr(data-slot);
+        white-space: pre-line;
+        font-size: 22px;
+        line-height: 1.65;
+        font-weight: 800;
+      }
+
+      .slot-fallback.light::before {
+        font-size: 20px;
+      }
+
+      .hero-visual {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        height: 100%;
+      }
+
+      .mini-panel {
+        position: relative;
+        z-index: 1;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.74);
+        border: 1px solid rgba(255, 255, 255, 0.66);
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .mini-icon {
+        width: 54px;
+        height: 54px;
+        border-radius: 18px;
+        background: rgba(122, 160, 139, 0.22);
+      }
+
+      .mini-lines {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .mini-lines span {
+        display: block;
+        height: 10px;
+        border-radius: 999px;
+        background: rgba(89, 111, 101, 0.18);
+      }
+
+      .mini-lines span:nth-child(1) { width: 88%; }
+      .mini-lines span:nth-child(2) { width: 70%; }
+      .mini-lines span:nth-child(3) { width: 56%; }
+
+      .timeline-card,
+      .step-card {
+        position: relative;
+        border-radius: 24px;
+        background: rgba(255, 253, 248, 0.95);
+        box-shadow: 0 14px 28px rgba(89, 106, 92, 0.08);
+      }
+
+      .timeline-card {
+        padding: 18px 16px 18px;
+      }
+
+      .timeline-card::before {
+        content: "";
+        position: absolute;
+        top: 18px;
+        left: 16px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: var(--gold-2);
+        box-shadow: 0 0 0 6px rgba(241, 223, 159, 0.3);
+      }
+
+      .timeline-card h3 {
+        margin: 0 0 10px 30px;
+        font-size: 22px;
+      }
+
+      .timeline-card p {
+        margin: 0;
+        font-size: 17px;
+        line-height: 1.55;
+        color: #445950;
+      }
+
+      .step-card {
+        padding: 22px 20px 18px;
+      }
+
+      .step-no {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        border-radius: 14px;
+        background: rgba(142, 175, 194, 0.2);
+        color: #355366;
+        font-size: 22px;
+        font-weight: 900;
+        margin-bottom: 12px;
+      }
+
+      .step-card h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+
+      .step-card p {
+        font-size: 17px;
+        line-height: 1.55;
+        color: #445a52;
+      }
+
+      .note-band {
+        margin-top: 10px;
+        padding: 16px 20px;
+        background: rgba(241, 223, 159, 0.46);
+        color: #5d4b19;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 1.5;
+      }
+
+      .closing-line {
+        margin-top: 14px;
+        padding: 16px 18px;
+        background: rgba(220, 236, 223, 0.76);
+        color: #2d4a3b;
+        font-size: 22px;
+        line-height: 1.55;
+        font-weight: 800;
+      }
+
+      .page-no {
+        position: absolute;
+        right: 40px;
+        bottom: 24px;
+        color: rgba(62, 81, 73, 0.75);
+        font-size: 20px;
+        font-weight: 800;
+      }
+
+      @media print {
+        body {
+          padding: 0;
+        }
+
+        .deck {
+          gap: 0;
+        }
+
+        .slide {
+          border-radius: 0;
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="deck">
+      <section class="slide">
+        <div class="shape a"></div>
+        <div class="shape b"></div>
+        <div class="shape c"></div>
+        <div class="frame"></div>
+        <div class="content">
+          <div class="eyebrow">校內行政說明簡報</div>
+          <div class="hero-shell">
+            <div class="hero-card">
+              <h1>115年<br />財產盤點準則</h1>
+              <p>依據本校 115 年度財產盤點與檢查需求整理，協助各單位掌握盤點、檢查、異常處理與後續追蹤重點。</p>
+              <div class="hero-meta-row">
+                <div class="hero-meta">校內財產盤點、檢查與後續處理作業說明</div>
+                <div class="hero-meta">中華民國115年4月</div>
+              </div>
+            </div>
+            <div class="media-stage">
+              <div class="media-label">主視覺預留區</div>
+              <div class="image-slot">
+                <img src="./images/01-cover.png" alt="Slide 1 cover visual" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="slot-fallback" style="display:none;" data-slot="封面主視覺\n行政辦公室、清冊、盤點標籤\n溫暖校園行政感"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-no">01</div>
+      </section>
+
+      <section class="slide">
+        <div class="shape a"></div>
+        <div class="shape b"></div>
+        <div class="frame"></div>
+        <div class="content">
+          <div class="eyebrow">一、依據與目的</div>
+          <div class="title-box">
+            <h2>讓帳籍、實物與管理責任都回到一致、清楚、可追蹤的狀態</h2>
+            <p>本年度財產盤點與檢查作業，係依上級函示、財產管理規定及本校既有作業模式辦理，核心目標不是只完成點收，而是把管理基礎做穩。</p>
+          </div>
+          <div class="split-shell">
+            <div class="media-stage">
+              <div class="media-label">Slide 02 視覺區</div>
+              <div class="image-slot">
+                <img src="./images/02-basis-purpose.png" alt="Slide 2 basis and purpose visual" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="slot-fallback light" style="display:none;" data-slot="依據與目的圖文主視覺\n法規文件、檢核清單、行政文具\n正式且親和"></div>
+              </div>
+            </div>
+            <div class="stack">
+              <div class="card blue">
+                <div class="icon-head"><div class="icon-square"></div><h3>主要依據</h3></div>
+                <ul>
+                  <li>114年5月2日新北府財產字第1140853771號函</li>
+                  <li>新北市政府各機關學校經管公有財產管理檢核暨輔導計畫</li>
+                  <li>新北市市有財產產籍管理要點第21點</li>
+                  <li>本校113年度財產檢查暨盤點（清查）計畫及114年度簽辦資料</li>
+                </ul>
+              </div>
+              <div class="pill-grid">
+                <div class="pill">掌握財產保管、維護及使用情形</div>
+                <div class="pill">查核帳籍與實物是否相符</div>
+                <div class="pill">發現閒置、遺失、損壞或不堪使用情形</div>
+                <div class="pill">作為更正、移撥、報廢及改善依據</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-no">02</div>
+      </section>
+
+      <section class="slide">
+        <div class="shape a"></div>
+        <div class="shape b"></div>
+        <div class="frame"></div>
+        <div class="content">
+          <div class="eyebrow">二、適用範圍與盤點類別</div>
+          <div class="title-box">
+            <h2>盤點工作不是單一處室任務，而是全校共同配合的管理作業</h2>
+            <p>本準則適用於本校各處室、專科教室及其他使用或保管校有財產之單位，從校舍到設備、從非消耗品到權利資料，都在盤點範圍內。</p>
+          </div>
+          <div class="split-shell">
+            <div class="card gold">
+              <div class="icon-head"><div class="icon-square"></div><h3>適用範圍</h3></div>
+              <ul>
+                <li>各處室</li>
+                <li>專科教室</li>
+                <li>其他使用或保管校有財產之單位</li>
+              </ul>
+              <div class="note-band">全校參與、各單位配合，才有辦法讓財產資料與實際使用狀況真正一致。</div>
+            </div>
+            <div class="stack">
+              <div class="media-stage" style="min-height: 250px;">
+                <div class="media-label">Slide 03 主視覺</div>
+                <div class="image-slot">
+                  <img src="./images/03-scope-types.png" alt="Slide 3 scope and property types visual" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                  <div class="slot-fallback light" style="display:none;" data-slot="校舍、設備、標籤、文件圖示\n四大類別資訊型視覺"></div>
+                </div>
+              </div>
+              <div class="grid-2">
+                <div class="card soft"><h3>不動產</h3><p>土地、土地改良物、房屋建築及設備</p></div>
+                <div class="card soft"><h3>動產</h3><p>機械及設備、交通及運輸設備、雜項設備</p></div>
+                <div class="card soft"><h3>非消耗品</h3><p>其他列帳管理之財物</p></div>
+                <div class="card soft"><h3>有價證券及權利</h3><p>依帳載資料核對文件與登載內容</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-no">03</div>
+      </section>
+
+      <section class="slide">
+        <div class="shape a"></div>
+        <div class="shape b"></div>
+        <div class="frame"></div>
+        <div class="content">
+          <div class="eyebrow">三、辦理原則</div>
+          <div class="title-box">
+            <h2>盤點與檢查不只是例行點收，而是依計畫執行、依結果改善的完整流程</h2>
+            <p>要把帳、物、人、地點都核對清楚，也要把後續報告、改善與追蹤一起完成，才能形成完整的財產管理閉環。</p>
+          </div>
+          <div class="split-shell">
+            <div class="media-stage">
+              <div class="media-label">Slide 04 視覺區</div>
+              <div class="image-slot">
+                <img src="./images/04-core-principles.png" alt="Slide 4 core principles visual" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="slot-fallback light" style="display:none;" data-slot="原則與檢核感主視覺\nchecklist、流程箭頭、行政工具"></div>
+              </div>
+            </div>
+            <div class="grid-2">
+              <div class="card green"><h3>至少一年一次</h3><p>每年至少辦理一次財產盤點（清查）與一次財產檢查。</p></div>
+              <div class="card blue"><h3>先核定計畫</h3><p>盤點與檢查作業都應先簽報核定計畫後再辦理。</p></div>
+              <div class="card gold"><h3>逐項核對</h3><p>依財產清冊核對帳、物、保管人與存置地點。</p></div>
+              <div class="card soft"><h3>同步查核管理</h3><p>檢查時應一併查核新增、保管、維護、交接、報廢及報損。</p></div>
+              <div class="card rose"><h3>完成報告</h3><p>盤點與檢查後均應作成結果報告並擬訂改善措施。</p></div>
+              <div class="card green"><h3>限期改善</h3><p>發現缺失或異常情形時，應查明原因並限期改善。</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="page-no">04</div>
+      </section>
+
+      <section class="slide">
+        <div class="shape a"></div>
+        <div class="shape b"></div>
+        <div class="frame"></div>
+        <div class="content">
+          <div class="eyebrow">四、權責分工</div>
+          <div class="title-box">
+            <h2>總務處統籌、各單位落實自檢、檢查小組複查、教務處會同檢查</h2>
+            <p>分工清楚，盤點工作才不會停留在單一窗口，而能變成全校共同配合、共同完成的管理機制。</p>
+          </div>
+          <div class="stack" style="margin-top:auto;">
+            <div class="media-stage" style="min-height: 220px;">
+              <div class="media-label">Slide 05 組織視覺</div>
+              <div class="image-slot">
+                <img src="./images/05-responsibility-split.png" alt="Slide 5 responsibility split visual" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="slot-fallback light" style="display:none;" data-slot="四角色分工主視覺\n校內行政人員、文件、協作關係"></div>
+              </div>
+            </div>
+            <div class="grid-4">
+              <div class="card green">
+                <h3>總務處</h3>
+                <ul>
+                  <li>擬訂計畫</li>
+                  <li>準備清冊與表件</li>
+                  <li>彙整結果與系統處理</li>
+                </ul>
+              </div>
+              <div class="card blue">
+                <h3>各處室及保管人</h3>
+                <ul>
+                  <li>逐項盤點與自檢</li>
+                  <li>核對保管資訊</li>
+                  <li>回送資料並配合改善</li>
+                </ul>
+              </div>
+              <div class="card gold">
+                <h3>檢查小組</h3>
+                <ul>
+                  <li>依計畫實地檢查</li>
+                  <li>核對盤點結果</li>
+                  <li>提出改善建議</li>
+                </ul>
+              </div>
+              <div class="card rose">
+                <h3>教務處</h3>
+                <ul>
+                  <li>依113年度既有作業分工</li>
+                  <li>會同辦理對總務處所管理財產業務之檢查</li>
+                  <li>配合總務處財產查核作業</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-no">05</div>
+      </section>
+
+      <section class="slide">
+        <div class="shape a"></div>
+        <div class="shape b"></div>
+        <div class="frame"></div>
+        <div class="content">
+          <div class="eyebrow">五、115年度作業時程</div>
+          <div class="title-box">
+            <h2>3 月籌備、4 月啟動、7 月前自檢完成、8 月前複查、9 月起追蹤修正</h2>
+            <p>各單位只要抓住節點，就能在整體時程內完成盤點、自檢、複查與後續帳務修正。</p>
+          </div>
+          <div class="split-shell">
+            <div class="media-stage">
+              <div class="media-label">Slide 06 Timeline 視覺</div>
+              <div class="image-slot">
+                <img src="./images/06-yearly-timeline.png" alt="Slide 6 yearly timeline visual" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="slot-fallback light" style="display:none;" data-slot="年度時程圖主視覺\n行事曆、流程節點、柔和行政圖示"></div>
+              </div>
+            </div>
+            <div class="timeline" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+              <div class="timeline-card"><h3>115年3月</h3><p>籌備期，完成計畫草案、簽核程序，備妥清冊及通知單。</p></div>
+              <div class="timeline-card"><h3>4月1日起</h3><p>盤點清查啟動，列印並分送財產清冊，通知開始清點。</p></div>
+              <div class="timeline-card"><h3>4月底前</h3><p>動產與非消耗品清冊紙本資料送發各財產保管人。</p></div>
+              <div class="timeline-card"><h3>7月31日前</h3><p>各處室完成自檢，並送回核章後清冊與檢查資料。</p></div>
+              <div class="timeline-card"><h3>8月31日前</h3><p>檢查小組辦理實地複查。</p></div>
+              <div class="timeline-card"><h3>9月起</h3><p>彙整結果、辦理改善追蹤及帳務修正。</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="page-no">06</div>
+      </section>
+
+      <section class="slide">
+        <div class="shape a"></div>
+        <div class="shape b"></div>
+        <div class="frame"></div>
+        <div class="content">
+          <div class="eyebrow">六、盤點（清查）程序</div>
+          <div class="title-box">
+            <h2>依清冊逐項核對、由保管人確認、由總務處彙整並追蹤改善</h2>
+            <p>盤點程序重點不在「點過就好」，而在資料回收完整、異常註記清楚、後續追蹤能落實。</p>
+          </div>
+          <div class="split-shell">
+            <div class="media-stage">
+              <div class="media-label">Slide 07 流程視覺</div>
+              <div class="image-slot">
+                <img src="./images/07-inventory-procedure.png" alt="Slide 7 inventory procedure visual" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="slot-fallback light" style="display:none;" data-slot="盤點流程主視覺\n清冊、核章、回收、彙整、追蹤"></div>
+              </div>
+            </div>
+            <div class="step-grid" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+              <div class="step-card"><div class="step-no">1</div><h3>計畫核定</h3><p>總務處簽報校長核定財產盤點（清查）計畫。</p></div>
+              <div class="step-card"><div class="step-no">2</div><h3>列印表件</h3><p>列印各單位財產清冊及相關表件。</p></div>
+              <div class="step-card"><div class="step-no">3</div><h3>逐項清點</h3><p>各單位依清冊逐項清點財產，確認帳物是否相符。</p></div>
+              <div class="step-card"><div class="step-no">4</div><h3>保管人核章</h3><p>各財產保管人於清冊「保管人」欄核章。</p></div>
+              <div class="step-card"><div class="step-no">5</div><h3>回送結果</h3><p>各單位送回盤點結果、異常註記及必要說明。</p></div>
+              <div class="step-card"><div class="step-no">6</div><h3>彙整報告</h3><p>總務處彙整後作成盤點結果報告表及改善措施。</p></div>
+            </div>
+          </div>
+          <div class="note-band">第 7 步為列管追蹤至改善完成，可在實際圖文版以頁腳帶或流程尾端節點強化呈現。</div>
+        </div>
+        <div class="page-no">07</div>
+      </section>
+
+      <section class="slide">
+        <div class="shape a"></div>
+        <div class="shape b"></div>
+        <div class="frame"></div>
+        <div class="content">
+          <div class="eyebrow">七、財產檢查程序</div>
+          <div class="title-box">
+            <h2>在各單位自檢基礎上，透過實地複查確認管理作業是否確實、程序是否合規</h2>
+            <p>財產檢查比盤點更進一步，重點在查核管理品質與程序完整性，而不只是核對實物存在。</p>
+          </div>
+          <div class="split-shell">
+            <div class="media-stage">
+              <div class="media-label">Slide 08 檢查視覺</div>
+              <div class="image-slot">
+                <img src="./images/08-inspection-procedure.png" alt="Slide 8 inspection procedure visual" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="slot-fallback light" style="display:none;" data-slot="實地複查主視覺\n稽核、標籤核對、現場檢查"></div>
+              </div>
+            </div>
+            <div class="stack">
+              <div class="card blue">
+                <h3>檢查流程</h3>
+                <ol>
+                  <li>總務處簽報校長核定財產檢查計畫</li>
+                  <li>依自檢資料及財產清冊辦理實地檢查</li>
+                  <li>查核保管、維護、使用與異動程序</li>
+                  <li>完成檢查報告及改善措施</li>
+                  <li>簽報核閱後通知相關單位限期改善</li>
+                </ol>
+              </div>
+              <div class="card green">
+                <h3>查核重點</h3>
+                <ul>
+                  <li>財產新增、移動、保管、維護及使用</li>
+                  <li>標籤、保管人及存置地點是否一致</li>
+                  <li>人員異動交接是否確實</li>
+                  <li>報廢、報損、減損與異動程序是否合規</li>
+                  <li>閒置、占用及不堪使用財產處理情形</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-no">08</div>
+      </section>
+
+      <section class="slide">
+        <div class="shape a"></div>
+        <div class="shape b"></div>
+        <div class="frame"></div>
+        <div class="content">
+          <div class="eyebrow">八、異常處理與報廢流程</div>
+          <div class="title-box">
+            <h2>找出異常只是起點，重點在依規定分流處理；報廢更必須另案辦理</h2>
+            <p>盤點與檢查的價值，在於異常發現後能立即更正、補辦、追蹤；其中報廢程序不能直接由盤點註記取代。</p>
+          </div>
+          <div class="split-shell">
+            <div class="media-stage">
+              <div class="media-label">Slide 09 異常視覺</div>
+              <div class="image-slot">
+                <img src="./images/09-exception-disposal.png" alt="Slide 9 exception handling and disposal visual" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="slot-fallback light" style="display:none;" data-slot="異常處理與報廢流程圖主視覺\n案例卡、箭頭流程、提醒標示"></div>
+              </div>
+            </div>
+            <div class="stack">
+              <div class="grid-2">
+                <div class="card soft"><h3>帳物不符</h3><p>查明原因，補正帳籍或補辦程序。</p></div>
+                <div class="card soft"><h3>盤盈 / 盤虧</h3><p>查明來源、責任與減損程序，完成補正或登帳。</p></div>
+                <div class="card soft"><h3>閒置財產</h3><p>評估校內調撥、移撥或報廢。</p></div>
+                <div class="card soft"><h3>損壞 / 不堪使用</h3><p>依規定辦理報廢、報損或修復。</p></div>
+              </div>
+              <div class="card rose">
+                <h3>報廢流程</h3>
+                <ol>
+                  <li>盤點時標示建議報廢項目</li>
+                  <li>另填財產報廢申請表並檢附照片</li>
+                  <li>依通知期程批次送件</li>
+                  <li>由總務處辦理系統減損、簽辦及後續程序</li>
+                  <li>核准前原保管人仍應妥善保管</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="note-band">盤點註記不等於直接報廢，報廢仍須依既有作業流程另案辦理。</div>
+        </div>
+        <div class="page-no">09</div>
+      </section>
+
+      <section class="slide">
+        <div class="shape a"></div>
+        <div class="shape b"></div>
+        <div class="frame"></div>
+        <div class="content">
+          <div class="eyebrow">九、成果文件與執行提醒</div>
+          <div class="title-box">
+            <h2>完成盤點與檢查後，還要把文件留完整、把改善追蹤做紮實</h2>
+            <p>成果文件是後續查核、改善、帳務修正與制度修正的重要依據，也是在校內持續推動財產管理的重要基礎。</p>
+          </div>
+          <div class="closing-shell">
+            <div class="stack">
+              <div class="media-stage" style="min-height: 230px;">
+                <div class="media-label">Slide 10 收束視覺</div>
+                <div class="image-slot">
+                  <img src="./images/10-records-closing.png" alt="Slide 10 records and closing visual" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                  <div class="slot-fallback light" style="display:none;" data-slot="成果文件與收尾主視覺\n資料夾、歸檔、清單、校內行政氛圍"></div>
+                </div>
+              </div>
+              <div class="card blue">
+                <h3>應留存文件</h3>
+                <ul>
+                  <li>財產盤點（清查）計畫</li>
+                  <li>財產檢查計畫</li>
+                  <li>各單位財產清冊</li>
+                  <li>財產管理情形檢查表</li>
+                  <li>盤點結果報告表</li>
+                  <li>檢查報告及改善措施</li>
+                  <li>盤點紀錄及相關帳務報表</li>
+                  <li>缺失改善追蹤紀錄</li>
+                  <li>報廢申請表、照片附件及相關簽辦資料</li>
+                </ul>
+              </div>
+            </div>
+            <div class="stack">
+              <div class="card green">
+                <h3>執行提醒</h3>
+                <ul>
+                  <li>依核定計畫與時程辦理</li>
+                  <li>各單位應完成盤點、自檢、複查與改善追蹤</li>
+                  <li>如遇上級機關最新函示或修正規定，應從其規定辦理</li>
+                </ul>
+              </div>
+              <div class="closing-line">讓帳籍清楚、實物相符、責任到位，才能讓財產管理更完整、更安心。</div>
+            </div>
+          </div>
+        </div>
+        <div class="page-no">10</div>
+      </section>
+    </div>
+  </body>
+</html>
