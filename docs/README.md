@@ -4,6 +4,8 @@ Use this folder for repo-level working agreements, deck conventions, and reusabl
 
 Current docs:
 
+- [project-handoff.md](</c:/Users/user/projects/slidecraft-lab/docs/project-handoff.md:1>)
+  current project status, active deck state, workflow findings, risks, and next directions
 - [product-positioning.md](</c:/Users/user/projects/slidecraft-lab/docs/product-positioning.md:1>)
   product purpose, differentiation, and presentation production modes
 - [project-structure.md](</c:/Users/user/projects/slidecraft-lab/docs/project-structure.md:1>)

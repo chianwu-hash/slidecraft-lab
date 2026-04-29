@@ -47,6 +47,7 @@ Status: working
 - **ChatGPT Web Image Rhythm**: Treat ChatGPT web image generation as one image per turn. For deck sequences, send one prompt file per round instead of combining all slide prompts into one large prompt.
 - **Full-Page Generation Boundary**: When generated images already contain the complete slide text and layout, export them directly as an image-only PDF. Do not place them into a text-overlay deck template, or users will see duplicated text.
 - **Local Text Correction**: ChatGPT Images can be useful for small local text repairs after generation. Archive corrected images separately before promoting them into `decks/<deck-name>/images/`.
+- **Multi-Image Limitation**: ChatGPT Images currently supports local edits for a single generated image, but a multi-image generation result cannot be locally corrected in the same way. Use single-image generation when the workflow expects follow-up partial text or layout repairs.
 
 ## Current Adjustment Direction
 
