@@ -6,6 +6,7 @@ exports/tmp/
 scratch/
 .browser-profiles/
 .browser-sessions/
+.chrome-cdp-profile/
 *.log
 *.tmp
 *.bak

@@ -1,0 +1,29 @@
+Generate the image now. Reply with image only; do not answer with explanatory text.
+
+Create exactly one 16:9 horizontal presentation slide image. Keep visual continuity.
+
+Use the uploaded image only as four-mascot character reference. Do not generate any school crest, logo, seal, stamp, or school emblem anywhere.
+
+Main text:
+案例：以場租收入改善場租管理
+收入支應・流程改善・承辦減負
+讓經費來源與改善對象一致
+
+Visual direction:
+- The slide title must visibly start with: 案例：
+- Make this a calm administrative proposal slide, not a cute poster.
+- Main subject: a clean funding-to-improvement flow diagram with 4 restrained blocks.
+- Visual elements: rental income note, budget request sheet, workflow improvement checklist, small calendar and control panel.
+- Show the AI workbench role: AI reads venue rental records, summarizes pain points, checks workflow bottlenecks, and prepares an improvement checklist for human review.
+- Use muted school-office colors, thin arrows, clear white space, and readable labels.
+- If they do not distract from the funding workflow, use 0 to 4 tiny mascots near the edges or desk foreground.
+- Mascots must not be centered and not be larger than the workflow blocks.
+- Do not use oversized mascot faces, comic excitement marks, heavy stickers, giant arrows, or highly saturated poster styling.
+- The workflow cycle labels should be the visual focus: 收入 -> 工具 -> 流程 -> 減負.
+
+Constraints:
+- Create exactly one image, not multiple alternatives.
+- Brand identity must not dominate; the case logic and funding workflow must be the main subject.
+- No page number badge; leave bottom-left and top-right empty.
+- Traditional Chinese only.
+- Keep financial numbers generic; no sensitive data.

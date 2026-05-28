@@ -1,0 +1,21 @@
+Generate the image now. Reply with image only; do not answer with explanatory text.
+
+Create exactly one 16:9 horizontal presentation slide image. Keep visual continuity.
+
+Use the uploaded image only as four-mascot character reference. Do not generate any school crest, logo, seal, stamp, or school emblem anywhere.
+
+Main text:
+不是買聊天機器人
+是建立行政 AI 工作台
+可追蹤・可審核・可交接
+
+Visual direction:
+- Do not show a sci-fi robot.
+- Show an administrative staff member reviewing AI-prepared drafts, checklists, and folders.
+- Visual metaphor: AI assists behind the workflow; human staff keeps judgment and approval.
+- If space allows, use 0 to 4 tiny mascots as quiet support: one may hold "草稿", one may hold "檢核", one may point to "人工確認".
+
+Constraints:
+- No page number badge; leave bottom-left and top-right empty.
+- Traditional Chinese only.
+- Mascots accurate, small, and not dominant.

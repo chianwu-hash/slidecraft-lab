@@ -1,0 +1,48 @@
+Generate the image now. Reply with image only; do not answer with explanatory text.
+
+Create exactly one 16:9 horizontal presentation slide image. Keep visual continuity with the AI administrative workbench deck.
+
+Use the uploaded image only as four-mascot character reference. Do not generate any school crest, logo, seal, stamp, or school emblem anywhere.
+
+Main text:
+附錄：補充案例
+可延伸的校務與行政工作流
+
+Card 1:
+案例：財產盤點與消耗用品管理
+情境：總務處
+用途：盤點準則、通知、勾核工具與領用紀錄
+亮點：從清冊到回收表，流程可查可交接
+
+Card 2:
+案例：家長會選舉系統
+情境：校務治理
+用途：線上投票、匿名防重複、即時統計
+亮點：安全、可稽核、可匯出結果
+
+Card 3:
+案例：行政簡報製作工作流
+情境：提案與成果報告
+用途：brief、頁面大綱、圖片提示詞、PDF 輸出
+亮點：不是一鍵亂生，而是可審稿、可追溯
+
+Card 4:
+案例：每日工作檢核與資料夾整理
+情境：文書組例行維護
+用途：每日檢核表、資料夾盤點、年度交接
+亮點：把例行工作變成可追蹤制度
+
+Visual direction:
+- Create a clean 2x2 appendix layout with four equal cards.
+- Each card must have exactly four short text rows: 案例, 情境, 用途, 亮點.
+- Use small icons only: inventory tag, ballot box, slide deck, checklist/folder.
+- Keep the layout calm, readable, and administrative.
+- Brand identity must be very light: use 0 to 4 tiny mascots only as corner accents, and omit mascots if they crowd the cards.
+- The four case cards and their text are the main subject.
+
+Constraints:
+- No page number badge; leave bottom-left and top-right empty.
+- Traditional Chinese only.
+- Do not write internal layout or production instructions on the slide.
+- Use only the four listed appendix cases. Do not add extra products, old training workflows, personal projects, games, travel, or unrelated examples.
+- Keep all text large enough to read in a presentation.

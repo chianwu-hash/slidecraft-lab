@@ -41,6 +41,8 @@ Each deck should declare its production mode before image prompts are written:
 - composed layout: the assistant controls final text and layout, while the image model creates supporting visuals
 - hybrid: full-page generation for covers or dividers, composed layout for information-heavy pages
 
+For full-page decks with fixed identity, prefer this split: the image model generates variable slide scenes, while code adds exact recurring elements such as page numbers, official crests, and logos. See [docs/full-page-generation-workflow.md](</c:/Users/user/projects/slidecraft-lab/docs/full-page-generation-workflow.md:1>).
+
 Comparative output is an optional experiment strategy, not a fourth production mode.
 
 ## Relationship to `browser-automation-workflow`
@@ -94,6 +96,7 @@ In short:
 4. Use `browser-automation-workflow` to run the Gemini image sequence.
 5. Save reviewed outputs under `exports/`.
 6. Compose the final deck under `decks/<deck-name>/`.
+7. For full-page image decks, apply fixed overlays, build a contact sheet, and regenerate only failed slides.
 
 See also:
 
@@ -101,6 +104,7 @@ See also:
 - [docs/deck-workflow.md](</c:/Users/user/projects/slidecraft-lab/docs/deck-workflow.md:1>)
 - [docs/deck-conventions.md](</c:/Users/user/projects/slidecraft-lab/docs/deck-conventions.md:1>)
 - [docs/brand-integration.md](</c:/Users/user/projects/slidecraft-lab/docs/brand-integration.md:1>)
+- [docs/full-page-generation-workflow.md](</c:/Users/user/projects/slidecraft-lab/docs/full-page-generation-workflow.md:1>)
 - [docs/export-review-checklist.md](</c:/Users/user/projects/slidecraft-lab/docs/export-review-checklist.md:1>)
 - [docs/naming-conventions.md](</c:/Users/user/projects/slidecraft-lab/docs/naming-conventions.md:1>)
 - [docs/encoding-guardrails.md](</c:/Users/user/projects/slidecraft-lab/docs/encoding-guardrails.md:1>)

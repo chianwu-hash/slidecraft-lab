@@ -1,0 +1,22 @@
+Generate the image now. Reply with image only; do not answer with explanatory text.
+
+Create exactly one 16:9 horizontal presentation slide image. Keep visual continuity.
+
+Use the uploaded image only as four-mascot character reference. Do not generate any school crest, logo, seal, stamp, or school emblem anywhere.
+
+Main text:
+安全機制：先檢核，再執行
+模擬執行・備份・人工確認
+敏感資料不外流
+
+Visual direction:
+- Show a secure workflow: original files -> backup -> 模擬執行 preview -> checklist -> human approve -> execute.
+- Explain 模擬執行 in viewer-friendly language: 模擬執行（先預覽結果，不直接改原始資料）.
+- Prefer the Chinese label 模擬執行 on the slide; if using English, show it only as 模擬執行（dry-run） once.
+- Use calm administrative security imagery, not cyberpunk.
+- If they do not crowd the security workflow, 0 to 4 tiny mascots may guard checkpoints and hold warning/check icons.
+
+Constraints:
+- No page number badge; leave bottom-left and top-right empty.
+- Traditional Chinese only, large and readable.
+- No passwords, tokens, IDs, or sensitive data.

@@ -1,0 +1,27 @@
+Generate the image now. Reply with image only; do not answer with explanatory text.
+
+Create exactly one 16:9 horizontal presentation slide image. Keep visual continuity.
+
+Use the uploaded image only as four-mascot character reference. Do not generate any school crest, logo, seal, stamp, or school emblem anywhere.
+
+Main text:
+場租案例三：場租管理系統（VRMS）
+Venue Rental Management System
+案件狀態一眼掌握
+申請・審核・收費・統計
+
+Visual direction:
+- The slide title must visibly start with: 場租案例三：
+- Show a dark-green venue rental management dashboard on a monitor.
+- Make the acronym clear on the slide: VRMS = Venue Rental Management System = 場租管理系統.
+- Include cards: 待審核, 已核准, 本月收入, 場地使用.
+- Show a clean approval checklist and revenue summary.
+- Show AI-assisted data flow: AI reads Google Sheets or application records, detects duplicates, masks personal data, summarizes status, and updates the VRMS dashboard after human confirmation.
+- If they do not crowd the dashboard, use 0 to 4 tiny mascots near dashboard elements as small helpers.
+
+Constraints:
+- Create exactly one image, not multiple alternatives.
+- No page number badge; leave bottom-left and top-right empty.
+- Traditional Chinese only.
+- No sensitive data.
+- Venue rental only; no principal schedule or private schedule content.

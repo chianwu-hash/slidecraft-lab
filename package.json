@@ -5,6 +5,10 @@
   "description": "An experimental workspace for crafting AI-generated presentations with strong visual identity, repeatable workflows, and brand-aware design.",
   "type": "commonjs",
   "scripts": {
-    "check": "node -e \"console.log('slidecraft-lab scaffold ready')\""
+    "check": "node --check tools/overlay-brand-elements.js && node -e \"console.log('slidecraft-lab scaffold ready')\"",
+    "brand:overlay": "node tools/overlay-brand-elements.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.59.1"
   }
 }

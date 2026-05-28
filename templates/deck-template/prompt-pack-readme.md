@@ -35,6 +35,17 @@ Examples:
 - tone constraints:
 - must-avoid visual elements:
 
+## Fixed Overlay Rules
+
+Use this section when generated images will receive code-added logos, crests, page numbers, or other fixed marks.
+
+- fixed overlays:
+- overlay positions:
+- safe zones to reserve in image prompts:
+- elements the image model must not generate:
+
+For a starter block, copy `deck-wide-rules.md`.
+
 ## Prompt Order
 
 Use two-digit prefixes for prompt files:

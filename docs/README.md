@@ -12,6 +12,8 @@ Current docs:
   top-level folder responsibilities and repo boundary
 - [deck-workflow.md](</c:/Users/user/projects/slidecraft-lab/docs/deck-workflow.md:1>)
   recommended path from brief to prompt pack to deck output
+- [full-page-generation-workflow.md](</c:/Users/user/projects/slidecraft-lab/docs/full-page-generation-workflow.md:1>)
+  complete slide-image workflow with code-added logos, page numbers, safe zones, and QA
 - [deck-conventions.md](</c:/Users/user/projects/slidecraft-lab/docs/deck-conventions.md:1>)
   standard presentation project package conventions
 - [brand-integration.md](</c:/Users/user/projects/slidecraft-lab/docs/brand-integration.md:1>)

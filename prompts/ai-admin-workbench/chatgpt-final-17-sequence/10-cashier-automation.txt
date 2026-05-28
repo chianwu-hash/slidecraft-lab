@@ -1,0 +1,29 @@
+Generate the image now. Reply with image only; do not answer with explanatory text.
+
+Create exactly one 16:9 horizontal presentation slide image. Keep visual continuity.
+
+Use the uploaded image only as four-mascot character reference. Do not generate any school crest, logo, seal, stamp, or school emblem anywhere.
+
+Main text:
+案例：出納組保險與薪資明細自動化
+每日短代加退保
+每月保險明細・薪資清冊比對
+SOP 檢核後輸出
+
+Visual direction:
+- The slide title must visibly start with: 案例：
+- Show a cashier office workflow desk with spreadsheets, insurance forms, payroll comparison, 模擬執行預覽 checklist, and human approval.
+- Include visual time-saving notes: 每日節省約20分鐘, 每張明細約60分鐘.
+- If they do not distract from the spreadsheet workflow, 0 to 4 tiny mascots may assist checking, pointing to discrepancies, and preparing output files.
+- Keep every visible label strictly within cashier, insurance, payroll, and SOP verification work.
+- Output labels should be: 勞保加退保申報表, 保險明細表, 薪資清冊比對, 差異提醒, SOP 檢核紀錄, 歸檔備份.
+- The final step should say: 完成後歸檔並交承辦人確認.
+- Do not use any venue rental, calendar-management, dashboard, or rental-system terminology on this slide.
+- Keep the bottom-left corner empty for the page-number badge. Do not place time-saving notes, mascots, calculators, labels, or icons there.
+- Place time-saving notes near the top-right or upper middle, but keep the extreme top-right corner empty for the official crest overlay.
+
+Constraints:
+- No real personal data; blur or generic rows.
+- Use the Chinese term 模擬執行. If English is needed, write 模擬執行（dry-run） only once in small text.
+- No page number badge; leave bottom-left and top-right empty for code overlay.
+- Traditional Chinese only.

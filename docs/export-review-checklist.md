@@ -12,6 +12,7 @@ Before moving generated images into the composed deck, check:
 - visual style is consistent across the sequence
 - character, mascot, or recurring subject remains stable
 - brand colors and tone are acceptable
+- overlay-safe zones are clear if fixed overlays will be added later
 - no unwanted text artifacts, watermarks, logos, or distorted details
 - image is high enough quality for the final deck format
 - selected images are copied or referenced from `decks/<deck-name>/images/`
@@ -26,6 +27,8 @@ Before exporting the final deck, check:
 - text is readable at presentation size
 - visual hierarchy is consistent
 - brand elements are intentional and not overused
+- fixed overlays such as page numbers and official marks are consistent
+- overlays do not cover important content
 - layout margins and alignment are consistent
 - image crops do not hide important content
 - no placeholder text remains

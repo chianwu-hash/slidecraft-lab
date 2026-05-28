@@ -1,0 +1,48 @@
+Generate the image now. Reply with image only; do not answer with explanatory text.
+
+Create exactly one 16:9 horizontal presentation slide image. Keep visual continuity with the AI administrative workbench deck.
+
+Use the uploaded image only as four-mascot character reference. Do not generate any school crest, logo, seal, stamp, or school emblem anywhere.
+
+Main text:
+附錄：工作流能力
+AI 行政工作台的底層能力
+
+Card 1:
+案例：Gmail 行政信件整理
+情境：行政信箱
+用途：標籤分類、白名單、待確認清單
+亮點：不刪信，先整理再由人確認
+
+Card 2:
+案例：會議記錄與語音逐字稿
+情境：行政會議
+用途：逐字稿、處室報告、待確認事項
+亮點：口語內容先整理，會議紀錄不再從零開始
+
+Card 3:
+案例：文件轉 Markdown / Text
+情境：附件與法規整理
+用途：PDF、Word、簡報、表格轉為 AI 可讀資料
+亮點：先把資料讀清楚，後續擬稿與檢核才可靠
+
+Card 4:
+案例：瀏覽器自動化工作流
+情境：已登入網站作業
+用途：CDP 瀏覽器、截圖、表單、平台操作流程
+亮點：人登入與確認，AI 協助重複操作與紀錄
+
+Visual direction:
+- Create a clean 2x2 appendix layout with four equal cards.
+- Each card must have exactly four short text rows: 案例, 情境, 用途, 亮點.
+- Use small icons only: email tag, microphone/transcript, document conversion, browser workflow.
+- Keep the layout calm, readable, and administrative.
+- Brand identity must be very light: use 0 to 4 tiny mascots only as corner accents, and omit mascots if they crowd the cards.
+- The four workflow cards and their text are the main subject.
+
+Constraints:
+- No page number badge; leave bottom-left and top-right empty.
+- Traditional Chinese only.
+- Do not write internal layout or production instructions on the slide.
+- Use only the four listed appendix workflow cases. Do not add extra products, old training workflows, personal projects, games, travel, or unrelated examples.
+- Keep all text large enough to read in a presentation.

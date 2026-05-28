@@ -1,0 +1,22 @@
+Generate the image now. Reply with image only; do not answer with explanatory text.
+
+Create exactly one 16:9 horizontal presentation slide image. Keep visual continuity.
+
+Use the uploaded image only as four-mascot character reference. Do not generate any school crest, logo, seal, stamp, or school emblem anywhere.
+
+Main text:
+第一階段採購標的
+ChatGPT Pro 行政 AI 工作台建置帳號 1 組
+月費預算抓 NT$4,000
+三個月試辦約 NT$12,000
+
+Visual direction:
+- Show a simple procurement card, budget sheet, and approval checklist on an administrative desk.
+- Emphasize "建置帳號" and "指定承辦人保管操作".
+- If they do not distract from the procurement numbers, 0 to 4 tiny mascots may hold budget tags and checklist items.
+
+Constraints:
+- Only describe the selected ChatGPT Pro first-stage trial procurement plan; do not compare with other plans.
+- Do not describe as shared multi-user account.
+- No page number badge; leave bottom-left and top-right empty.
+- Traditional Chinese only.

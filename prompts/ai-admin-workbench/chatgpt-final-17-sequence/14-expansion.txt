@@ -1,0 +1,20 @@
+Generate the image now. Reply with image only; do not answer with explanatory text.
+
+Create exactly one 16:9 horizontal presentation slide image. Keep visual continuity.
+
+Use the uploaded image only as four-mascot character reference. Do not generate any school crest, logo, seal, stamp, or school emblem anywhere.
+
+Main text:
+先建置，再擴散
+教務處・學務處・總務處・輔導處・幼兒園
+每個處室累積自己的工作流
+
+Visual direction:
+- Show five office/folder lanes radiating from the central AI workbench.
+- Each lane has a simple icon and one workflow card.
+- If they do not crowd the five office lanes, 0 to 4 tiny mascots may help carry templates from the central workbench to different offices.
+
+Constraints:
+- Exactly these five units: 教務處, 學務處, 總務處, 輔導處, 幼兒園.
+- No page number badge; leave bottom-left and top-right empty.
+- Traditional Chinese only.

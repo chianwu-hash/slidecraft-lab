@@ -1,0 +1,22 @@
+Generate the image now. Reply with image only; do not answer with explanatory text.
+
+Create exactly one 16:9 horizontal presentation slide image. Keep visual continuity.
+
+Use the uploaded image only as four-mascot character reference. Do not generate any school crest, logo, seal, stamp, or school emblem anywhere.
+
+Main text:
+工作台架構
+資料夾知識庫 + Codex Desktop + 瀏覽器/API
+讀取資料・產出草稿・模擬執行・人工確認
+
+Visual direction:
+- Show a clear architecture diagram as an administrative desk/workbench, not a corporate tech diagram.
+- Three main blocks: 資料夾知識庫, Codex Desktop, 瀏覽器/API.
+- Arrows lead to outputs: SOP, 表格, 行事曆, 簡報, 檢核清單.
+- Use 模擬執行. If English is needed, write 模擬執行（dry-run） only once.
+- If they do not crowd the diagram, 0 to 4 tiny mascots can stand near blocks as small guides.
+
+Constraints:
+- No page number badge; leave bottom-left and top-right empty.
+- Traditional Chinese labels, large and few.
+- No fake logo or crest.

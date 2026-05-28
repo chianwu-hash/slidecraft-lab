@@ -53,6 +53,9 @@ Add anything another collaborator needs to understand before continuing the deck
 ## Final Review Checklist
 
 - generated images reviewed:
+- overlay-safe zones reviewed:
+- fixed overlays applied:
+- contact sheet reviewed:
 - rendered pages reviewed:
 - final deliverable exported:
 - final deliverable location:

@@ -155,6 +155,24 @@ Recommended handling:
 - keep rendered page previews under `exports/<deck-name>/rendered-pages/`
 - record selection rationale in `decks/<deck-name>/notes/` when useful
 
+## Full-Page Generation Prompt Packs
+
+When the image model generates complete slide pages, include deck-wide rules for fixed overlays and safe zones.
+
+Recommended default:
+
+```text
+Reserve overlay-safe corners: keep the top-right corner clear for the official crest or logo, and keep the bottom-left corner clear for the page-number badge. Do not place text, icons, metrics, mascots, charts, or important objects in those two corners.
+```
+
+Each individual prompt should also remind the model:
+
+```text
+Do not create a page number badge. Do not create any crest, logo, seal, stamp, or official emblem. Leave the bottom-left and top-right corners empty for code overlay.
+```
+
+For a reusable starter, copy `templates/deck-template/deck-wide-rules.md`.
+
 ## Review Checklist
 
 Before using generated images in a deck, check:
@@ -163,6 +181,7 @@ Before using generated images in a deck, check:
 - generated images match slide intent
 - visual continuity is acceptable
 - brand fit is acceptable
+- overlay-safe zones are clear when code overlays will be applied
 - no unwanted text artifacts appear
 - selected images are available in `decks/<deck-name>/images/`
 - review-stage artifacts are organized under `exports/<deck-name>/`

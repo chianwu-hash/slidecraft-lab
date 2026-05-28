@@ -1,0 +1,21 @@
+Generate the image now. Reply with image only; do not answer with explanatory text.
+
+Create exactly one 16:9 horizontal presentation slide image. Keep visual continuity.
+
+Use the uploaded image only as four-mascot character reference. Do not generate any school crest, logo, seal, stamp, or school emblem anywhere.
+
+Main text:
+案例：公文擬辦與每日分文建議
+每日公文先整理，再由承辦人判斷
+摘要・分文建議・待辦追蹤
+
+Visual direction:
+- The slide title must visibly start with: 案例：
+- Show incoming official documents, a daily routing board, and an AI-prepared recommendation sheet.
+- Emphasize "建議" not replacement: human review stamp or confirmation checklist.
+- If they do not cover document labels, 0 to 4 tiny mascots may help sort documents or hold tags.
+
+Constraints:
+- No real personal data or sensitive document content.
+- No page number badge; leave bottom-left and top-right empty.
+- Traditional Chinese only, large and legible.

@@ -1,0 +1,22 @@
+Generate the image now. Reply with image only; do not answer with explanatory text.
+
+Create exactly one 16:9 horizontal presentation slide image. Keep the same visual style as the previous slide.
+
+Use the uploaded image only as four-mascot character reference. Do not generate any school crest, logo, seal, stamp, or school emblem anywhere.
+
+Main text:
+行政需要可累積的工作台
+行政不缺努力，缺的是能累積、能交接的流程
+資料分散・流程斷點・交接困難
+
+Visual direction:
+- Left side: scattered folders, paper forms, messages, calendar notes.
+- Right side: a calm AI workbench dashboard organizing tasks into clear columns.
+- Show transformation from fragmented work to traceable workflow.
+- If they do not interfere with the workflow message, 0 to 4 tiny mascots can sort papers, point to the dashboard, or carry checklists as small accents.
+
+Constraints:
+- No page number badge; leave bottom-left and top-right empty.
+- Traditional Chinese only, large and legible.
+- No crest/logo/seal/stamp/emblem.
+- Mascots must stay small and not cover text.

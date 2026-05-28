@@ -1,0 +1,30 @@
+Generate the image now. Reply with image only; do not answer with explanatory text.
+
+Create exactly one 16:9 horizontal presentation slide image. Keep visual continuity.
+
+Use the uploaded image only as four-mascot character reference. Do not generate any school crest, logo, seal, stamp, or school emblem anywhere.
+
+Main text:
+場租案例一：AI 串接 Google Calendar API
+讀取場租申請・檢查衝突・寫入行事曆
+場地時段集中可查，流程可交接
+
+Visual direction:
+- The visual subject must be an AI workbench using Google Calendar API to manage venue rental events, not just a plain calendar screenshot.
+- The slide title must visibly include: 場租案例一：AI 串接 Google Calendar API
+- Show a clear left-to-right workflow: 場租申請表 -> AI 讀取與整理 -> Calendar API -> Google Calendar 場租行事曆.
+- Include small labels: API 讀取, 衝突檢查, 自動建立事件, 人工確認.
+- The monthly venue rental calendar should be on the right as the final result, with colored venue blocks.
+- Include venue labels such as 活動中心, 普通教室, 操場.
+- Show a staff member approving the AI-prepared event plan before it is written to the calendar.
+- If they do not dominate the API workflow, use 0 to 4 tiny mascots as supporting accents.
+- Mascots must be small supporting accents only; do not let mascots dominate over the API workflow.
+
+Constraints:
+- Create exactly one image, not multiple alternatives.
+- Do not use the title 以場租收入改善場租管理.
+- Keep this slide focused only on venue-calendar API management: rental request reading, conflict checking, event creation, and human confirmation.
+- Viewers must immediately understand why this is an AI administrative workbench: AI reads requests, checks conflicts, calls Calendar API, then a human confirms.
+- No principal calendar content.
+- No page number badge; leave bottom-left and top-right empty.
+- Traditional Chinese only, large and legible.

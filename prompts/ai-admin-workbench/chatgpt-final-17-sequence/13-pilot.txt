@@ -1,0 +1,20 @@
+Generate the image now. Reply with image only; do not answer with explanatory text.
+
+Create exactly one 16:9 horizontal presentation slide image. Keep visual continuity.
+
+Use the uploaded image only as four-mascot character reference. Do not generate any school crest, logo, seal, stamp, or school emblem anywhere.
+
+Main text:
+三個月試辦成果
+完成 SOP・提示詞模板・自動化流程
+產出可交接文件與示範案例
+
+Visual direction:
+- Show a 3-month timeline with milestones: 第1月盤點, 第2月建置, 第3月試用與交接.
+- Include deliverables on the desk: SOP, prompts, workflow scripts, demo slides.
+- If they do not crowd the timeline, 0 to 4 tiny mascots may move along the timeline as small helpers.
+
+Constraints:
+- No page number badge; leave bottom-left and top-right empty.
+- Traditional Chinese only.
+- Keep text minimal and large.

@@ -1,0 +1,21 @@
+Generate the image now. Reply with image only; do not answer with explanatory text.
+
+Create exactly one 16:9 horizontal presentation slide image for a formal Taiwanese elementary-school proposal deck.
+
+Use the uploaded image only as a four-mascot character reference. It does not contain the school crest. Do not generate any school crest, logo, seal, stamp, or school emblem anywhere.
+
+Main text:
+AI 行政工作台
+用 Codex Desktop 建立可追蹤、可交接的行政流程
+頂溪國小 行政提案
+
+Visual direction:
+- Warm formal school administration style: cream paper texture, deep green headings, restrained gold accents, clean desk scene.
+- Show administrative folders, calendar sheets, checklists, and a monitor with a Codex Desktop style workflow dashboard.
+- If it does not distract from the title, add 0 to 4 tiny mascots as contextual helpers on the desk.
+
+Constraints:
+- Do not create a page number badge.
+- Leave bottom-left and top-right empty for code overlay.
+- Text must be Traditional Chinese, large, legible, and minimal.
+- Mascots: keep colors and basic silhouettes; no extra limbs, tails, or new species.

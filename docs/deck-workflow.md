@@ -8,6 +8,7 @@
 - outline and prompt-pack design
 - brand integration decisions
 - deck assembly
+- fixed identity overlays such as page numbers and official logos
 - export review and delivery artifacts
 
 `browser-automation-workflow` owns the reusable execution layer:
@@ -25,8 +26,11 @@ Keep these responsibilities separate. Do not move generic automation scripts int
 3. Build a deck-specific prompt pack in `prompts/<deck-name>/`.
 4. Run the prompt pack with tooling from `browser-automation-workflow`.
 5. Review and curate outputs in `exports/<deck-name>/`.
-6. Assemble the final presentation in `decks/<deck-name>/`.
-7. Export review images and the final PDF.
+6. Apply fixed overlays when needed, such as page numbers or official logos.
+7. Assemble the final presentation in `decks/<deck-name>/`.
+8. Export review images and the final PDF.
+
+For full-page image-generation decks, see [full-page-generation-workflow.md](</c:/Users/user/projects/slidecraft-lab/docs/full-page-generation-workflow.md:1>).
 
 ## Recommended Folder Pattern
 
@@ -57,6 +61,7 @@ Suggested contents for `decks/<deck-name>/`:
 - Treat `decks/` as the canonical home for the composed presentation.
 - Keep brand decisions close to the deck brief, prompt pack, or deck README unless they are reusable across multiple decks.
 - If a script or helper would be reused across unrelated decks, it likely belongs in `browser-automation-workflow` instead.
+- Presentation-specific post-production helpers, such as applying a crest and page-number overlay to final slide images, may live in `slidecraft-lab/tools/`.
 
 ## Sample
 

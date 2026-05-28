@@ -1,0 +1,24 @@
+Generate the image now. Reply with image only; do not answer with explanatory text.
+
+Create exactly one 16:9 horizontal presentation slide image. Keep visual continuity.
+
+Use the uploaded image only as four-mascot character reference. Do not generate any school crest, logo, seal, stamp, or school emblem anywhere.
+
+Main text:
+場租案例二：場租日期填寫系統
+申請日期格式化
+減少人工整理與輸入錯誤
+從紙本到可檢核資料
+
+Visual direction:
+- The slide title must visibly start with: 場租案例二：
+- Show paper rental forms converted into a clean digital date-entry form.
+- Include before/after: handwritten dates -> structured date table -> ready for calendar.
+- Show AI workbench value: AI reads the date fields, detects date-format errors, converts them into structured data, and prepares records for human confirmation.
+- If they do not crowd the form, 0 to 4 tiny mascots may hold form fields, check errors, or guide the user through steps.
+
+Constraints:
+- No page number badge; leave bottom-left and top-right empty.
+- Traditional Chinese only.
+- No real applicants or personal data.
+- Venue rental only; no principal schedule or private schedule content.

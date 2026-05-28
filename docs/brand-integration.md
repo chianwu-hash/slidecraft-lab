@@ -22,6 +22,7 @@ Avoid:
 - copying brand material into prompts without explaining the intended visual role
 - mixing too many unrelated style references
 - treating generated images as final before reviewing brand fit
+- asking the image model to reproduce official marks that must remain exact across the deck
 
 ## Brand Inputs
 
@@ -85,6 +86,39 @@ Include:
 
 For same-chat image sequences, keep brand rules stable across all prompts. Change slide content, scene, and emphasis, but avoid rewriting the entire style direction for every slide.
 
+## Fixed Identity Overlays
+
+When a brand element must be exact, consistent, and audit-friendly, add it after image generation instead of asking the image model to draw it.
+
+Use code overlays for:
+
+- official school crests
+- official logos
+- page-number badges
+- watermarks
+- recurring seals, stamps, or labels that must be identical on every slide
+
+Use the image model for variable branded context:
+
+- branded atmosphere
+- color and tone
+- mascot references
+- scene motifs
+- office, campus, or product context
+
+For full-page generation, prompt for safe empty corners before generating the image. The current recommended school-deck default is:
+
+- top-right: official crest or logo
+- bottom-left: page number
+
+Deck-wide prompt rule:
+
+```text
+Reserve overlay-safe corners: keep the top-right corner clear for the official crest or logo, and keep the bottom-left corner clear for the page-number badge. Do not place text, icons, metrics, mascots, charts, or important objects in those two corners.
+```
+
+This prevents the post-production overlay from covering important slide content.
+
 ## Deck Assembly Decisions
 
 The composed deck should apply brand identity deliberately.
@@ -115,6 +149,7 @@ Final deck review:
 
 - Does the deck feel coherent as a full presentation?
 - Are brand elements consistent but not overwhelming?
+- Are fixed overlays consistent and clear of important content?
 - Are text, layout, and image hierarchy readable?
 - Are final deliverables placed in `decks/<deck-name>/final/`?
 
@@ -143,6 +178,7 @@ Before generating images:
 Before final export:
 
 - selected images reviewed for brand fit
+- fixed overlay positions reviewed for consistency
 - slide assembly reviewed for consistency
 - final PDF or presentation export placed in `decks/<deck-name>/final/`
 - version notes updated in `decks/<deck-name>/README.md` or `decks/<deck-name>/notes/`

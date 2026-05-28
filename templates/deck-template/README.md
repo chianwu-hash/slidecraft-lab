@@ -11,8 +11,10 @@ This template does not include browser automation scripts. It only provides appl
 3. Copy `prompt-pack-readme.md` to `prompts/<deck-name>/<prompt-pack-name>/README.md`.
 4. Copy `deck-readme.md` to `decks/<deck-name>/README.md`.
 5. Copy `production-notes.md` to `decks/<deck-name>/notes/production-notes.md`.
-6. Copy `experiment-readme.md` to `experiments/<deck-name>/<experiment-name>/README.md` if exploratory work is needed.
-7. Create working and output folders as needed.
+6. Copy `slide-workflow-qa-checklist.md` to `decks/<deck-name>/notes/slide-workflow-qa-checklist.md` when generated images or overlays need QA.
+7. Copy `deck-wide-rules.md` into the prompt pack when using full-page image generation.
+8. Copy `experiment-readme.md` to `experiments/<deck-name>/<experiment-name>/README.md` if exploratory work is needed.
+9. Create working and output folders as needed.
 
 Recommended package layout:
 
@@ -23,6 +25,7 @@ decks/<deck-name>/README.md
 decks/<deck-name>/slides.html
 decks/<deck-name>/images/
 decks/<deck-name>/notes/production-notes.md
+decks/<deck-name>/notes/slide-workflow-qa-checklist.md
 decks/<deck-name>/final/
 exports/<deck-name>/generated-images/
 exports/<deck-name>/rendered-pages/
@@ -45,5 +48,7 @@ Use one of these labels in `decks/<deck-name>/README.md`:
 Keep prompt content, deck decisions, selected assets, and final deliverables in `slidecraft-lab`.
 
 Keep reusable browser/session/Gemini workflow automation in `browser-automation-workflow`.
+
+Presentation-specific post-production helpers, such as applying page-number and logo overlays to generated slide images, may use `tools/overlay-brand-elements.js`.
 
 For naming details, see [docs/naming-conventions.md](</c:/Users/user/projects/slidecraft-lab/docs/naming-conventions.md:1>).
